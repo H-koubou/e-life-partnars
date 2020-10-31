@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, ,initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>お問い合わせ | eライフパートナーズ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logobox">
+        <img src="img/common/logo.png" alt="">
+      </div>
+      <nav id="gnav">
+        <ul class="navbox">
+          <li class="list"><a href="index.html">トップページ</a></li>
+          <li class="list"><a href="fidelity-guarantee-business.html">身元保証支援事業</a></li>
+          <li class="list"><a href="retirement-home-introduction-business.html">老人ホーム紹介事業</a></li>
+          <li class="list"><a href="company.html">企業情報</a></li>
+          <li class="list"><a href="news.html">新着情報</a></li>
+          <li class="list"><a href="blog.html">ブログ</a></li>
+          <li class="list"><a href="voice.html">利用者の声</a></li>
+          <li class="list"><a href="faq.html">よくある質問</a></li>
+        </ul>
+      </nav>
+      <div class="telbox">
+        <a href="">
+          <img src="img/common/headerr-tel.png" alt="">
+        </a>
+      </div>
+      <div id="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <main id="main">
+      <div class="lower-page-heading">
+        <h1 class="title">お問い合わせ</h1>
+      </div>
+      <div class="contact-wrap">
+        <p class="read">eライフパートナーズのサービスに関するご相談・お問い合わせはお電話または下記メールフォームより承っております。どうぞお気軽にお問い合わせください。<br>なお、メールの確認に時間を要する場合がございますので、お急ぎのお客様はお電話にてお問い合わせ頂くことをおすすめいたします。<br>個人情報の取扱いについては「<a href="privacy.html">プライバシーポリシー</a>」をご参照下さい。</p>
+        <div class="telbox">
+          <div class="image"><a href="tel:06-6170-7061"><img src="img/contact/tel-icon.png" alt="06-6170-7061"></a></div>
+          <p class="read">受付時間：平日 9:00~19:00(土日祝除く)</p>
+        </div>
+
+        <div class="formbox">
+          <form action="">
+            <dl class="formitem">
+              <dt class="title">お名前<span class="required">必須</span></dt>
+              <dd class="detail">
+                <input type="text" name="fulname" class="md">
+              </dd>
+            </dl>
+            <dl class="formitem">
+              <dt class="title">フリガナ<span class="required">必須</dt>
+              <dd class="detail">
+                <input type="text" name="fulname" class="md">
+              </dd>
+            </dl>
+            <dl class="formitem">
+              <dt class="title">住所</dt>
+              <dd class="detail">
+                <p class="postalcode">
+                  <span>〒</span>
+                  <input type="text" name="postalcode1" size="3" class="xxs">
+                  <span>-</span>
+                  <input type="text" name="postalcode2" onKeyUp="AjaxZip3.zip2addr('postalcode1','postalcode2','add','add');" size="4" class="xs">
+                  <span class="danger">※郵便番号から住所自動入力</span>
+                </p>
+                <input type="text" name="add" class="lg">
+              </dd>
+            </dl>
+            <dl class="formitem">
+              <dt class="title">お電話番号<span class="required">必須</span></dt>
+              <dd class="detail">
+                <input type="text" name="tel" class="md">
+              </dd>
+            </dl>
+            <dl class="formitem">
+              <dt class="title">メールアドレス<span class="required">必須</span></dt>
+              <dd class="detail">
+                <input type="email" name="mailaddress" class="md">
+              </dd>
+            </dl>
+            <dl class="formitem">
+              <dt class="title">ご希望の連絡先</dt>
+              <dd class="detail">
+                <input type="radio" name="contact_method" value="1" id="radio01"  class="radio-input">
+                <label for="radio01">電話</label>
+                <input type="radio" name="contact_method" value="2" id="radio02"  class="radio-input">
+                <label for="radio02">メール</label>
+              </dd>
+            </dl>
+            <dl class="formitem">
+              <dt class="title">お問い合わせ内容<span class="required">必須</span></dt>
+              <dd class="detail">
+                <textarea name="contact_message" cols="10"></textarea>
+              </dd>
+            </dl>
+            <p class="submitbtn"><input type="submit" value="送信" class="submit"></p>
+          </form>
+        </div>
+
+        <section class="downloadbox">
+          <h2 class="main-title">資料ダウンロード</h2>
+          <dl class="downloadlist">
+            <dt class="title">ダウンロードできる資料</dt>
+            <dd class="detail">
+              <p class="read">下記の資料をまとめてダウンロードできます。</p>
+              <ul class="downloaditem">
+                <li class="item">資料の名前</li>
+                <li class="item">資料の名前</li>
+                <li class="item">資料の名前</li>
+              </ul>
+            </dd>
+          </dl>
+          <p class="submitbtn"><a href="" class="downloadbtn">資料ダウンロード</a></p>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="content">
+        <div class="logo"><img src="img/common/footer-logo.png" alt=""></div>
+        <div class="footnavibox">
+          <div class="navibox">
+            <ul class="navilist">
+              <li class="list"><a href="index.html">トップページ</a></li>
+              <li class="list"><a href="fidelity-guarantee-business.html">身元保証支援事業</a></li>
+              <li class="list"><a href="retirement-home-introduction-business.html">老人ホーム紹介事業</a></li>
+            </ul>
+          </div>
+          <div class="navibox">
+            <ul class="navilist">
+              <li class="list"><a href="company.html">企業情報</a></li>
+              <li class="list"><a href="news.html">新着情報</a></li>
+              <li class="list"><a href="blog.html">ブログ</a></li>
+            </ul>
+            <ul class="navilist">
+              <li class="list"><a href="faq.html">よくある質問</a></li>
+              <li class="list"><a href="voice.html">利用者の声</a></li>
+              <li class="list"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </div>
+          <div class="navibox">
+            <ul class="navilist">
+              <li class="list"><a href="sitemap.html">サイトマップ</a></li>
+              <li class="list"><a href="privacy.html">プライバシーポリシー</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">©e-lifepartners</p>
+    </footer>
+
+    <div id="hamburger">
+      <div id="overlay"></div>
+      <div id="hamburgerwrap" class="hamburgerwrap">
+        <a id="close" href="javascript:void(0)"><span></span><span></span></a>
+        <ul class="navlist">
+          <li class="list"><a href="index.html">トップページ</a></li>
+          <li class="list"><a href="fidelity-guarantee-business.html">身元保証支援事業</a></li>
+          <li class="list"><a href="retirement-home-introduction-business.html">老人ホーム紹介事業</a></li>
+          <li class="list"><a href="company.html">企業情報</a></li>
+          <li class="list"><a href="news.html">新着情報</a></li>
+          <li class="list"><a href="blog.html">ブログ</a></li>
+          <li class="list"><a href="voice.html">利用者の声</a></li>
+          <li class="list"><a href="faq.html">よくある質問</a></li>
+        </ul>
+        <!-- <div class="telbox">
+          <a href="">
+            <img src="img/common/headerr-tel.png" alt="">
+          </a>
+        </div> -->
+      </div>
+    </div>
+
+    <ul class="cv-fixed">
+      <li class="list"><a href=""><img src="img/common/document-cv-btn.png" alt="資料ダウンロード"></a></li>
+      <li class="list"><a href="contact.html"><img src="img/common/contact-cv-btn.png" alt="お問い合わせ"></a></li>
+    </ul>
+
+
+    <script src="js/app.js" defer></script>
+  </body>
+  </html>
