@@ -233,21 +233,14 @@ a:hover {
 
 /*--------メインタイトル-------- */
 .main-title {
-  font-size: 25px;
-  font-size: 2.5rem;
-  line-height: 1.12;
-  font-family: "futura-t";
-  font-weight: bold;
   text-align: center;
   position: relative;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 45px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .main-title {
-    font-size: 20px;
-    font-size: 2rem;
-    line-height: 1.4;
+    margin: 0 auto 35px;
   }
 }
 
@@ -264,28 +257,15 @@ a:hover {
 }
 
 .mainunder-read {
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 32px;
-  font-size: 3.2rem;
-  line-height: 1.46875;
   text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .mainunder-read {
-    font-size: 25px;
-    font-size: 2.5rem;
-    line-height: 1.88;
-  }
 }
 
 /* -----------------------------------------------------------
     header
 ----------------------------------------------------------- */
 #header {
-  align-items: center;
-  -webkit-align-items: center;
+  align-items: stretch;
+  -webkit-align-items: stretch;
   display: flex;
   display: -webkit-flex;
   -webkit-flex-direction: row;
@@ -296,7 +276,6 @@ a:hover {
   flex-wrap: nowrap;
   width: 100%;
   position: absolute;
-  background: #fff;
   top: 0;
   left: 0;
   width: 100%;
@@ -307,19 +286,43 @@ a:hover {
   flex: 0 1 250px;
   -webkit-flex: 0 1 250px;
   padding: 0 10px;
+  background: #fff;
+  align-items: center;
+  -webkit-align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 1280px) {
   #header > .logobox {
     flex: 0 1 150px;
     -webkit-flex: 0 1 150px;
+    background: transparent;
+    padding: 0;
+    margin: 0 0 0 10px;
   }
 }
 
 #header > #gnav {
   flex: 1 1;
   -webkit-flex: 1 1;
-  margin: 0 20px;
+  background: #fff;
+  align-items: center;
+  -webkit-align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 1280px) {
@@ -329,6 +332,7 @@ a:hover {
 }
 
 #header > #gnav > .navbox {
+  padding: 0 20px;
   align-items: center;
   -webkit-align-items: center;
   display: flex;
@@ -792,15 +796,9 @@ a:hover {
 .aroundbtn > .before a,
 .aroundbtn > .next a {
   display: block;
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.5;
   display: inline-block;
   color: #fff;
   position: relative;
-  padding: 1.5rem 3rem 1.5rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   border-bottom-style: solid;
@@ -814,22 +812,6 @@ a:hover {
   font-family: "genjyu-medium";
   font-weight: medium;
   width: 100%;
-}
-
-@media screen and (max-width: 980px) {
-  .aroundbtn > .before a,
-  .aroundbtn > .next a {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .aroundbtn > .before a,
-  .aroundbtn > .next a {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -851,15 +833,9 @@ a:hover {
 
 .aroundbtn > .sumary a {
   display: block;
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.5;
   display: inline-block;
   color: #fff;
   position: relative;
-  padding: 1.5rem 3rem 1.5rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   border-bottom-style: solid;
@@ -873,20 +849,6 @@ a:hover {
   font-family: "genjyu-medium";
   font-weight: medium;
   width: 100%;
-}
-
-@media screen and (max-width: 980px) {
-  .aroundbtn > .sumary a {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .aroundbtn > .sumary a {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -913,7 +875,7 @@ a:hover {
   -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
   padding: 2.5% 5% 6%;
-  background: #E8F8E8 url(../img/common/footer-path.png) repeat-x bottom;
+  background: #D0F7D0 url(../img/common/footer-path.png) repeat-x bottom;
 }
 
 @media screen and (max-width: 980px) {
@@ -923,11 +885,16 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #footer > .content {
+    padding: 5% 5% 150px;
+    background-size: 250%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #footer > .content {
-    display: block;
-    padding: 5% 5% 15%;
-    background-size: 250%;
+    padding: 5% 5% 80px;
   }
 }
 
@@ -940,6 +907,18 @@ a:hover {
 @media screen and (max-width: 980px) {
   #footer > .content > .logo {
     margin: 0 2.5% 5% 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #footer > .content > .logo {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #footer > .content > .logo img {
+    max-width: 150px;
   }
 }
 
@@ -982,7 +961,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   #footer > .content > .footnavibox {
     display: block;
   }
@@ -993,7 +972,7 @@ a:hover {
 }
 
 #footer > .content > .footnavibox > .navibox {
-  padding: 10px 25px;
+  padding: 10px 32px;
   border-left: 1px dashed #4E9174;
   align-items: flex-start;
   -webkit-align-items: flex-start;
@@ -1007,7 +986,7 @@ a:hover {
   flex-wrap: nowrap;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   #footer > .content > .footnavibox > .navibox {
     border-left: none;
     border-top: 1px dashed #4E9174;
@@ -1019,7 +998,7 @@ a:hover {
   border-right: 1px dashed #4E9174;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   #footer > .content > .footnavibox > .navibox:last-of-type {
     border-right: none;
     border-bottom: 1px dashed #4E9174;
@@ -1027,11 +1006,11 @@ a:hover {
 }
 
 #footer > .content > .footnavibox > .navibox > .navilist:nth-of-type(2) {
-  margin: 0 0 0 15px;
+  margin: 0 0 0 32px;
 }
 
 #footer > .content > .footnavibox > .navibox > .navilist > .list {
-  margin: 0 0 15px;
+  margin: 0 0 23px;
 }
 
 #footer > .copyright {
@@ -1043,7 +1022,7 @@ a:hover {
   background: #4E9174;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   #footer > .copyright {
     padding: 15px 5%;
     font-size: 12px;
@@ -1166,7 +1145,7 @@ a:hover {
 .cv-fixed {
   position: fixed;
   right: 0;
-  top: 100px;
+  top: 55%;
   width: 120px;
   z-index: 100;
 }
@@ -1255,93 +1234,42 @@ a:hover {
 /*--------立体ボタン-------- */
 /* トップページ */
 .mainimg {
-  align-items: stretch;
-  -webkit-align-items: stretch;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  height: calc(100vh - 72px);
   min-height: 600px;
-  margin: 72px 0 0;
-}
-
-@media screen and (max-width: 1720px) {
-  .mainimg {
-    height: calc(100vh - 50px);
-    margin: 50px 0 0;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .mainimg {
-    height: auto;
-    min-height: 0;
-    display: block;
-  }
-}
-
-.mainimg > .leftbox,
-.mainimg > .rightbox {
-  flex: 0 1 50%;
-  -webkit-flex: 0 1 50%;
   position: relative;
+  z-index: 0;
+  padding: 65px 0 0;
 }
 
-.mainimg > .leftbox {
-  background: url(../img/top/main-img.png) no-repeat center left/cover;
-  padding: 0 30px 25px 0;
-  align-items: flex-start;
-  -webkit-align-items: flex-start;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-}
-
-@media screen and (max-width: 980px) {
-  .mainimg > .leftbox {
-    min-height: 350px;
-    height: 50vh;
+@media screen and (max-width: 1280px) {
+  .mainimg {
+    padding: 50px 0 0;
   }
 }
 
-.mainimg > .leftbox > .icon {
+@media screen and (max-width: 768px) {
+  .mainimg {
+    min-height: 0;
+  }
+}
+
+.mainimg:after {
+  content: "";
+  display: block;
+  height: 50%;
+  width: 100%;
+  background: #E8F8E8;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 220px;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-@media screen and (max-width: 1520px) {
-  .mainimg > .leftbox > .icon {
-    width: 150px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .mainimg > .leftbox > .icon {
-    width: 100px;
-  }
-}
-
-.mainimg > .leftbox > .newsbox {
+.mainimg > .newsbox {
   font-size: 18px;
   font-size: 1.8rem;
   padding: 30px;
   background: #F8F8F8;
-  width: 100%;
-  margin-top: auto;
+  width: calc(50% - 45px);
   align-items: center;
   -webkit-align-items: center;
   display: flex;
@@ -1352,27 +1280,50 @@ a:hover {
   justify-content: flex-start;
   -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  position: absolute;
+  left: 45px;
+  bottom: 0;
+  z-index: 100;
 }
 
 @media screen and (max-width: 1520px) {
-  .mainimg > .leftbox > .newsbox {
+  .mainimg > .newsbox {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
 
-@media screen and (max-width: 980px) {
-  .mainimg > .leftbox > .newsbox {
+@media screen and (max-width: 1280px) {
+  .mainimg > .newsbox {
+    padding: 30px;
+    background: #F8F8F8;
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     position: absolute;
-    left: 0;
-    bottom: -10%;
+    left: 45px;
+    bottom: 0;
     z-index: 100;
-    width: 95%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .mainimg > .newsbox {
+    position: static;
+    width: 90%;
+    margin: 10% auto 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .mainimg > .leftbox > .newsbox {
+  .mainimg > .newsbox {
     font-size: 14px;
     font-size: 1.4rem;
     padding: 10px 20px;
@@ -1389,26 +1340,27 @@ a:hover {
   }
 }
 
-.mainimg > .leftbox > .newsbox > .new {
-  font-family: "futura-t";
-  font-weight: bold;
-  line-height: 1.16667;
+.mainimg > .newsbox > .new {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
   margin: 0 3.5em 0 0;
 }
 
 @media screen and (max-width: 1520px) {
-  .mainimg > .leftbox > .newsbox > .new {
+  .mainimg > .newsbox > .new {
     margin: 0 2.5em 0 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .mainimg > .leftbox > .newsbox > .new {
+  .mainimg > .newsbox > .new {
+    flex: 0 0 40px;
+    -webkit-flex: 0 0 40px;
     margin: 0 .5em .5em 0;
   }
 }
 
-.mainimg > .leftbox > .newsbox > .time {
+.mainimg > .newsbox > .time {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium","ヒラギノ角ゴ Pro W3","ヒラギノ角ゴ", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 500;
   line-height: 1.61111;
@@ -1417,18 +1369,18 @@ a:hover {
 }
 
 @media screen and (max-width: 1520px) {
-  .mainimg > .leftbox > .newsbox > .time {
+  .mainimg > .newsbox > .time {
     margin: 0 2.5em 0 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .mainimg > .leftbox > .newsbox > .time {
+  .mainimg > .newsbox > .time {
     margin: 0 .5em .5em 0;
   }
 }
 
-.mainimg > .leftbox > .newsbox > a {
+.mainimg > .newsbox > a {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium","ヒラギノ角ゴ Pro W3","ヒラギノ角ゴ", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -1439,127 +1391,56 @@ a:hover {
 }
 
 @media screen and (max-width: 1520px) {
-  .mainimg > .leftbox > .newsbox > a {
+  .mainimg > .newsbox > a {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .mainimg > .leftbox > .newsbox > a {
+  .mainimg > .newsbox > a {
     width: 100%;
     font-size: 14px;
     font-size: 1.4rem;
   }
 }
 
-.mainimg > .rightbox {
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  color: #4E9174;
-  padding: 5%;
-  background: #E8F8E8;
-  align-items: center;
-  -webkit-align-items: center;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  position: relative;
-  text-align: center;
-}
-
-@media screen and (max-width: 980px) {
-  .mainimg > .rightbox {
-    padding: 15% 5% 5%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .mainimg > .rightbox {
-    padding: 20% 5% 5%;
-  }
-}
-
-.mainimg > .rightbox > .title > .read {
-  font-size: 40px;
-  font-size: 4rem;
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  line-height: 0.6;
-  margin: 0 0 1.95em;
-  display: block;
-}
-
-@media screen and (max-width: 1520px) {
-  .mainimg > .rightbox > .title > .read {
-    font-size: 2vw;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .mainimg > .rightbox > .title > .read {
-    font-size: 3.06vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .mainimg > .rightbox > .title > .read {
-    font-size: 5vw;
-  }
-}
-
-.mainimg > .rightbox > .title > .read > span {
-  font-size: 50px;
-  font-size: 5rem;
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  line-height: 0.48;
-}
-
-@media screen and (max-width: 1520px) {
-  .mainimg > .rightbox > .title > .read > span {
-    font-size: 2.67vw;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .mainimg > .rightbox > .title > .read > span {
-    font-size: 4.08vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .mainimg > .rightbox > .title > .read > span {
-    font-size: 6vw;
-  }
-}
-
-.mainimg > .rightbox:after {
-  content: "";
+.mainimg > .maincopy {
   position: absolute;
+  right: 8%;
+  top: 15%;
+  width: 30.89%;
+}
+
+@media screen and (max-width: 480px) {
+  .mainimg > .maincopy {
+    width: 40%;
+  }
+}
+
+.mainimg > .mainobject {
+  position: absolute;
+  right: 5%;
   bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 200px 350px;
-  border-color: transparent transparent #fff transparent;
+  width: 28%;
 }
 
 @media screen and (max-width: 980px) {
-  .mainimg > .rightbox:after {
-    border-width: 0 0 50px 150px;
+  .mainimg > .mainobject {
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainimg > .mainobject {
+    top: 45%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .mainimg > .rightbox:after {
-    border-width: 0 0 25px 75px;
+  .mainimg > .mainobject {
+    top: 40%;
+    width: 40%;
   }
 }
 
@@ -1571,6 +1452,7 @@ a:hover {
 @media screen and (max-width: 480px) {
   .concept-wrap {
     background-size: 75%;
+    padding: 80px 5% 80px;
   }
 }
 
@@ -1578,77 +1460,32 @@ a:hover {
   margin: 0 0 6.25%;
 }
 
+@media screen and (max-width: 480px) {
+  .concept-wrap > .mainunder-read {
+    margin: 0 0 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .concept-wrap > .mainunder-read img {
+    max-width: 80%;
+  }
+}
+
 .concept-wrap > .readbox {
-  font-size: 2.34vw;
-  font-family: "genjyu-bold";
-  font-weight: bold;
   text-align: center;
-  line-height: 1.5;
-}
-
-@media screen and (max-width: 480px) {
-  .concept-wrap > .readbox {
-    font-size: 3vw;
-  }
-}
-
-.concept-wrap > .readbox .read {
-  margin: 0 0 30px;
-}
-
-@media screen and (max-width: 480px) {
-  .concept-wrap > .readbox .read {
-    margin: 0 0 15px;
-  }
-}
-
-.concept-wrap > .readbox .read > .min {
-  font-size: 2.08vw;
-}
-
-@media screen and (max-width: 480px) {
-  .concept-wrap > .readbox .read > .min {
-    font-size: 2.5vw;
-  }
-}
-
-.concept-wrap > .readbox .read > .yellow {
-  font-size: 2.6vw;
-  color: #F2A935;
-}
-
-@media screen and (max-width: 480px) {
-  .concept-wrap > .readbox .read > .yellow {
-    font-size: 3.25vw;
-  }
-}
-
-.concept-wrap > .readbox .read > .green {
-  font-size: 2.6vw;
-  color: #47B847;
-}
-
-@media screen and (max-width: 480px) {
-  .concept-wrap > .readbox .read > .green {
-    font-size: 3.25vw;
-  }
-}
-
-.concept-wrap > .readbox .read > .marker {
-  background: #F7E1D0;
-  padding: 10px 2.5px;
-}
-
-@media screen and (max-width: 480px) {
-  .concept-wrap > .readbox .read > .marker {
-    padding: 5px 2.5px;
-  }
 }
 
 .business-wrap {
   padding: 5% 0;
   position: relative;
   background: #E8F8E8;
+}
+
+@media screen and (max-width: 480px) {
+  .business-wrap {
+    padding: 60px 0 5%;
+  }
 }
 
 .business-wrap:before {
@@ -1705,8 +1542,8 @@ a:hover {
 }
 
 @media screen and (max-width: 480px) {
-  .business-wrap > .mainunder-read {
-    margin: 0 0 5%;
+  .business-wrap > .mainunder-read img {
+    max-width: 80px;
   }
 }
 
@@ -1782,11 +1619,6 @@ a:hover {
 }
 
 .business-wrap > .contentslist > .list > .title {
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 30px;
-  font-size: 3rem;
-  line-height: 1.63333;
   align-items: center;
   -webkit-align-items: center;
   display: flex;
@@ -1802,9 +1634,16 @@ a:hover {
   width: 100%;
 }
 
+.business-wrap > .contentslist > .list > .title img {
+  flex: 0 1 300px;
+  -webkit-flex: 0 1 300px;
+  width: 0%;
+}
+
 @media screen and (max-width: 480px) {
-  .business-wrap > .contentslist > .list > .title {
-    font-size: 6.25vw;
+  .business-wrap > .contentslist > .list > .title img {
+    flex: 0 1 200px;
+    -webkit-flex: 0 1 200px;
   }
 }
 
@@ -1818,9 +1657,9 @@ a:hover {
 
 @media screen and (max-width: 480px) {
   .business-wrap > .contentslist > .list > .title:before {
-    flex: 0 0 30px;
-    -webkit-flex: 0 0 30px;
-    height: 26px;
+    flex: 0 0 45px;
+    -webkit-flex: 0 0 45px;
+    height: 37px;
   }
 }
 
@@ -1886,16 +1725,14 @@ a:hover {
   max-width: 100%;
 }
 
+.business-wrap > .contentslist > .list > .btn a {
+  padding: 19px 10px;
+}
+
 .business-wrap > .contentslist > .list:first-of-type > .btn a {
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.5;
   display: inline-block;
   color: #fff;
   position: relative;
-  padding: 1.5rem 3rem 1.5rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   border-bottom-style: solid;
@@ -1909,30 +1746,10 @@ a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 980px) {
-  .business-wrap > .contentslist > .list:first-of-type > .btn a {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .business-wrap > .contentslist > .list:first-of-type > .btn a {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
-}
-
 .business-wrap > .contentslist > .list:nth-of-type(2) > .btn a {
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.5;
   display: inline-block;
   color: #fff;
   position: relative;
-  padding: 1.5rem 3rem 1.5rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   border-bottom-style: solid;
@@ -1944,20 +1761,6 @@ a:hover {
   border-bottom-color: #41A841;
   width: 100%;
   text-align: center;
-}
-
-@media screen and (max-width: 980px) {
-  .business-wrap > .contentslist > .list:nth-of-type(2) > .btn a {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .business-wrap > .contentslist > .list:nth-of-type(2) > .btn a {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
 }
 
 .business-wrap > .contentslist > .list > .likethis {
@@ -1985,6 +1788,19 @@ a:hover {
   font-weight: 500;
 }
 
+.business-wrap > .contentslist > .list > .likethis > .detail > .detaillist > .list {
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
 .business-wrap > .contentslist > .list > .likethis > .detail > .detaillist > .list:before {
   content: "・";
 }
@@ -2004,12 +1820,24 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .voice-wrap {
-    padding: 60px 0 5%;
+    padding: 60px 0 60px;
   }
 }
 
 .voice-wrap > .mainunder-read {
   margin: 0 0 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .voice-wrap > .mainunder-read {
+    margin: 0 0 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .voice-wrap > .mainunder-read img {
+    max-width: 80px;
+  }
 }
 
 .voice-wrap > .voicelist {
@@ -2242,15 +2070,9 @@ a:hover {
 }
 
 .voice-wrap > .btn a {
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.5;
   display: inline-block;
   color: #fff;
   position: relative;
-  padding: 1.5rem 3rem 1.5rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   border-bottom-style: solid;
@@ -2260,24 +2082,12 @@ a:hover {
   -webkit-transition: all 0.5s ease;
   background: #47B847;
   border-bottom-color: #41A841;
+  padding: 19px;
+  line-height: 0;
   width: 100%;
   max-width: 450px;
   display: block;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 980px) {
-  .voice-wrap > .btn a {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .voice-wrap > .btn a {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
 }
 
 .information-wrap {
@@ -2307,23 +2117,16 @@ a:hover {
 @media screen and (max-width: 980px) {
   .information-wrap > section {
     width: 100%;
-    padding: 5%;
+    padding: 40px 5% 60px;
   }
 }
 
 .information-wrap > section > .title {
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 32px;
-  font-size: 3.2rem;
-  line-height: 1.46875;
   margin: 0 0 1.5em;
 }
 
 @media screen and (max-width: 480px) {
   .information-wrap > section > .title {
-    font-size: 25px;
-    font-size: 2.5rem;
     margin: 0 0 1em;
   }
 }
@@ -2373,15 +2176,9 @@ a:hover {
 }
 
 .information-wrap > .newsbox > .btn a {
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.5;
   display: inline-block;
   color: #fff;
   position: relative;
-  padding: 1.5rem 3rem 1.5rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   border-bottom-style: solid;
@@ -2392,22 +2189,9 @@ a:hover {
   background: #47B847;
   border-bottom-color: #41A841;
   max-width: 250px;
+  padding: 19px 17px 18px 17px;
   width: 100%;
   text-align: center;
-}
-
-@media screen and (max-width: 980px) {
-  .information-wrap > .newsbox > .btn a {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .information-wrap > .newsbox > .btn a {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
 }
 
 .information-wrap > .contactbox {
@@ -2421,26 +2205,12 @@ a:hover {
 .information-wrap > .contactbox > .content {
   width: 320px;
   height: 265px;
-  background: #F7E1D0;
-  border: 3px solid #E6753D;
   margin: 0 auto 5%;
-  align-items: center;
-  -webkit-align-items: center;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  border-radius: 50%;
 }
 
 @media screen and (max-width: 480px) {
   .information-wrap > .contactbox > .content {
     width: calc(320px - 10%);
-    height: 235px;
   }
 }
 
@@ -4791,15 +4561,9 @@ a:hover {
 .lower-news-wrap > .newscontents > .singlecontents > .aroundbtn > .before a,
 .lower-news-wrap > .newscontents > .singlecontents > .aroundbtn > .next a {
   display: block;
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.5;
   display: inline-block;
   color: #fff;
   position: relative;
-  padding: 1.5rem 3rem 1.5rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   border-bottom-style: solid;
@@ -4813,22 +4577,6 @@ a:hover {
   font-family: "genjyu-medium";
   font-weight: medium;
   width: 100%;
-}
-
-@media screen and (max-width: 980px) {
-  .lower-news-wrap > .newscontents > .singlecontents > .aroundbtn > .before a,
-  .lower-news-wrap > .newscontents > .singlecontents > .aroundbtn > .next a {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .lower-news-wrap > .newscontents > .singlecontents > .aroundbtn > .before a,
-  .lower-news-wrap > .newscontents > .singlecontents > .aroundbtn > .next a {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -4850,15 +4598,9 @@ a:hover {
 
 .lower-news-wrap > .newscontents > .singlecontents > .aroundbtn > .sumary a {
   display: block;
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.5;
   display: inline-block;
   color: #fff;
   position: relative;
-  padding: 1.5rem 3rem 1.5rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   border-bottom-style: solid;
@@ -4872,20 +4614,6 @@ a:hover {
   font-family: "genjyu-medium";
   font-weight: medium;
   width: 100%;
-}
-
-@media screen and (max-width: 980px) {
-  .lower-news-wrap > .newscontents > .singlecontents > .aroundbtn > .sumary a {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .lower-news-wrap > .newscontents > .singlecontents > .aroundbtn > .sumary a {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -5648,15 +5376,9 @@ a:hover {
   display: block;
   width: 100%;
   padding: 15px 10px;
-  font-family: "genjyu-bold";
-  font-weight: bold;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.5;
   display: inline-block;
   color: #fff;
   position: relative;
-  padding: 1.5rem 3rem 1.5rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   border-bottom-style: solid;
@@ -5669,22 +5391,6 @@ a:hover {
   padding-left: 2em;
   padding-right: 2em;
   position: relative;
-}
-
-@media screen and (max-width: 980px) {
-  .contact-wrap .submitbtn .submit,
-  .contact-wrap .submitbtn .downloadbtn {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact-wrap .submitbtn .submit,
-  .contact-wrap .submitbtn .downloadbtn {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
 }
 
 .contact-wrap .submitbtn .downloadbtn {
