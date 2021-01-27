@@ -1968,6 +1968,8 @@ a:hover {
 @media screen and (max-width: 980px) {
   .voice-wrap > .voicelist > .list > a > .voicedetail {
     padding: 30px 15px 40px;
+    flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
   }
 }
 
